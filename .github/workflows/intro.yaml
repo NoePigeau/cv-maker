@@ -1,12 +1,11 @@
 name: Intro to github actions
 
-#when does this workflow run
 on: 
   push: 
 
 jobs:
   hello-world:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2 # step prefaite 
       - run: echo "Hello World!" # step home made 
